@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Lorena Santana - Desenvolvedora Front-end focada na criação de produtos digitais modernos com estética refinada, alta performance e usabilidade.">
+  <title>Lorena Santana | Desenvolvedora Front-end</title>
+
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos Principais -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Efeito de Iluminação de Fundo (Ambient Glow) -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- =====================================================================
+       1. CABEÇALHO & MENU FIXO (NAVBAR)
+       ===================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      
+      <!-- Logotipo / Nome com link para o topo -->
+      <a href="#inicio" class="header-logo" aria-label="Voltar ao início">
+        <span class="logo-symbol">&lt;</span>
+        <span class="logo-text">Lorena.dev</span>
+        <span class="logo-symbol">/&gt;</span>
+      </a>
+
+      <!-- Navegação Desktop -->
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Ações do Cabeçalho: Alternador de Tema e Botão Hambúrguer Mobile -->
+      <div class="header-actions">
+        
+        <!-- Botão Toggle de Modo Claro / Escuro -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar para modo claro" title="Alternar tema">
+          <!-- Ícone Sol (aparece no modo escuro) -->
+          <svg class="theme-icon icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Ícone Lua (aparece no modo claro) -->
+          <svg class="theme-icon icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Botão Menu Mobile (Hambúrguer) -->
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Menu Gaveta Mobile -->
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navegação móvel" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#inicio" class="mobile-nav-link">Início</a></li>
+        <li><a href="#sobre" class="mobile-nav-link">Sobre Mim</a></li>
+        <li><a href="#projetos" class="mobile-nav-link">Projetos</a></li>
+        <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =====================================================================
+       CONTEÚDO PRINCIPAL
+       ===================================================================== -->
+  <main id="main-content">
+    
+    <!-- ===================================================================
+         SEÇÃO HERO
+         =================================================================== -->
+    <section class="hero" id="inicio">
+      <div class="hero-container reveal">
+        
+        <!-- Badge de Disponibilidade -->
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          <span>Disponível para novos projetos & oportunidades</span>
+        </div>
+
+        <!-- Apresentação Principal -->
+        <p class="hero-greeting">Olá, meu nome é</p>
+        <h1 class="hero-title">
+          <span class="name-gradient">Lorena Santana</span>
+        </h1>
+        <h2 class="hero-subtitle">Desenvolvedora Front-end</h2>
+
+        <!-- Frase de Impacto Selecionada -->
+        <p class="hero-description">
+          Desenvolvedora Front-end focada na criação de produtos digitais modernos com estética refinada, alta performance e usabilidade.
+        </p>
+
+        <!-- Botões de Ação (CTA) -->
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary">
+            <span>Ver Projetos</span>
+            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#contato" class="btn btn-secondary">
+            <span>Entrar em Contato</span>
+          </a>
+        </div>
+
+        <!-- Indicador de Rolagem -->
+        <a href="#sobre" class="hero-scroll-indicator" aria-label="Rolar para a seção Sobre Mim">
+          <span class="mouse-icon">
+            <span class="mouse-wheel"></span>
+          </span>
+          <span class="scroll-text">Role para explorar</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SEÇÃO SOBRE MIM
+         =================================================================== -->
+    <section class="section about-section" id="sobre">
+      <div class="container">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Conheça mais</span>
+          <h2 class="section-title">Sobre Mim</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Coluna Visual / Foto de Perfil -->
+          <div class="about-visual reveal">
+            <div class="about-image-card">
+              <div class="image-glow-backdrop" aria-hidden="true"></div>
+              <div class="image-wrapper">
+                <img src="assets/perfil.png" alt="Foto de perfil de Lorena Santana" class="profile-img" loading="lazy">
+              </div>
+              <div class="about-card-badge">
+                <span class="badge-icon">✨</span>
+                <span>Foco em Front-end & Aprendizado Contínuo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna Conteúdo / Apresentação e Habilidades -->
+          <div class="about-content reveal">
+            <h3 class="about-heading">
+              Construindo interfaces com dedicação, criatividade e foco na evolução constante.
+            </h3>
+
+            <p class="about-text">
+              Sou estudante da área de <strong>Desenvolvimento de Sistemas</strong> e tenho grande interesse e paixão pelo desenvolvimento Front-end.
+            </p>
+
+            <p class="about-text">
+              Estou aprendendo e aprimorando continuamente minhas habilidades na criação de sites, layouts modernos e interfaces interativas, buscando evoluir a cada dia na área de tecnologia e aplicar boas práticas de desenvolvimento web.
+            </p>
+
+            <!-- Grid de Destaques Rápidos -->
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-label">Área Principal</span>
+                <span class="highlight-value">Desenvolvimento Front-end</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-label">Formação</span>
+                <span class="highlight-value">Desenvolvimento de Sistemas</span>
+              </div>
+            </div>
+
+            <!-- Bloco de Tecnologias & Ferramentas -->
+            <div class="skills-block">
+              <h4 class="skills-title">Tecnologias & Ferramentas</h4>
+              <div class="skills-list">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">React Native</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SEÇÃO PROJETOS
+         =================================================================== -->
+    <section class="section projects-section" id="projetos">
+      <div class="container">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Trabalhos Selecionados</span>
+          <h2 class="section-title">Meus Projetos</h2>
+          <div class="section-line" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            Aplicações e estudos práticos desenvolvidos com foco em engenharia de interface e desenvolvimento de sistemas.
+          </p>
+        </div>
+
+        <!-- Grade de Cards de Projetos -->
+        <div class="projects-grid">
+
+          <!-- Card 1: perf-frontend -->
+          <article class="project-card reveal">
+            <div class="project-preview">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot red"></span>
+                  <span class="mockup-dot yellow"></span>
+                  <span class="mockup-dot green"></span>
+                  <span class="mockup-address">github.com/loresantana/perf-frontend</span>
+                </div>
+                <div class="mockup-content mockup-frontend">
+                  <div class="code-line glow-line"></div>
+                  <div class="code-line short"></div>
+                  <div class="preview-badge-floating">
+                    <span class="badge-icon">⚡</span>
+                    <span>Front-end Architecture</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-body">
+              <div class="project-header-info">
+                <span class="project-tagline">Interface & Desempenho</span>
+                <h3 class="project-name">perf-frontend</h3>
+              </div>
+              <p class="project-description">
+                Projeto focado na construção de interfaces modernas, organização de componentes e boas práticas de desenvolvimento Front-end.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-pill">Front-end</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">CSS3 / HTML5</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/loresantana/perf-frontend" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <svg class="git-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>Acessar no GitHub</span>
+                  <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: lo-frontback -->
+          <article class="project-card reveal">
+            <div class="project-preview">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot red"></span>
+                  <span class="mockup-dot yellow"></span>
+                  <span class="mockup-dot green"></span>
+                  <span class="mockup-address">github.com/loresantana/lo-frontback</span>
+                </div>
+                <div class="mockup-content mockup-fullstack">
+                  <div class="network-nodes">
+                    <span class="node front">Front</span>
+                    <span class="node-connector">⇄</span>
+                    <span class="node back">Back</span>
+                  </div>
+                  <div class="preview-badge-floating">
+                    <span class="badge-icon">🔄</span>
+                    <span>Full-stack Integration</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-body">
+              <div class="project-header-info">
+                <span class="project-tagline">Integração & Fluxo de Dados</span>
+                <h3 class="project-name">lo-frontback</h3>
+              </div>
+              <p class="project-description">
+                Aplicação explorando a integração completa entre camadas de Front-end e serviços de Back-end, conectando cliente, requisições e lógica de servidor.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-pill">Front-end</span>
+                <span class="tech-pill">Back-end</span>
+                <span class="tech-pill">Integração API</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/loresantana/lo-frontback" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <svg class="git-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>Acessar no GitHub</span>
+                  <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: OrgProva2 -->
+          <article class="project-card reveal">
+            <div class="project-preview">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot red"></span>
+                  <span class="mockup-dot yellow"></span>
+                  <span class="mockup-dot green"></span>
+                  <span class="mockup-address">github.com/loresantana/OrgProva2</span>
+                </div>
+                <div class="mockup-content mockup-systems">
+                  <div class="system-bars">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                  </div>
+                  <div class="preview-badge-floating">
+                    <span class="badge-icon">📊</span>
+                    <span>Sistemas & Regras de Negócio</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-body">
+              <div class="project-header-info">
+                <span class="project-tagline">Desenvolvimento de Sistemas</span>
+                <h3 class="project-name">OrgProva2</h3>
+              </div>
+              <p class="project-description">
+                Projeto prático acadêmico com foco na estruturação, validação e organização de rotinas e regras de sistemas computacionais.
+              </p>
+              
+              <div class="project-tech-stack">
+                <span class="tech-pill">Dev de Sistemas</span>
+                <span class="tech-pill">Lógica & Dados</span>
+                <span class="tech-pill">Git</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/loresantana/OrgProva2" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <svg class="git-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>Acessar no GitHub</span>
+                  <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SEÇÃO CONTATO
+         =================================================================== -->
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Vamos Conversar?</span>
+          <h2 class="section-title">Entre em Contato</h2>
+          <div class="section-line" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            Envie uma mensagem através do formulário ou conecte-se comigo diretamente através do meu GitHub.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Informações de Contato & GitHub -->
+          <div class="contact-info-card reveal">
+            <h3 class="contact-info-title">Conecte-se comigo</h3>
+            <p class="contact-info-text">
+              Estou sempre em busca de aprender novas tecnologias, colaborar em projetos e trocar experiências sobre desenvolvimento web.
+            </p>
+
+            <div class="contact-channels">
+              <a href="https://github.com/loresantana" target="_blank" rel="noopener noreferrer" class="channel-card github-channel">
+                <div class="channel-icon-wrapper">
+                  <svg class="channel-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">GitHub</span>
+                  <span class="channel-value">@loresantana</span>
+                </div>
+                <svg class="channel-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <div class="contact-status-box">
+              <span class="status-dot"></span>
+              <span>Atenta a novas mensagens e feedbacks</span>
+            </div>
+          </div>
+
+          <!-- Formulário de Mensagens -->
+          <div class="contact-form-wrapper reveal">
+            <form id="contact-form" class="contact-form" novalidate>
+              
+              <!-- Campo: Nome -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Seu Nome *</label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="Como você se chama?"
+                  required
+                  autocomplete="name"
+                >
+                <span class="form-error" id="error-name" aria-live="polite"></span>
+              </div>
+
+              <!-- Campo: E-mail -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Seu E-mail *</label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="seu.email@exemplo.com"
+                  required
+                  autocomplete="email"
+                >
+                <span class="form-error" id="error-email" aria-live="polite"></span>
+              </div>
+
+              <!-- Campo: Assunto -->
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Assunto *</label>
+                <input 
+                  type="text" 
+                  id="contact-subject" 
+                  name="subject" 
+                  class="form-input" 
+                  placeholder="Sobre o que gostaria de falar?"
+                  required
+                >
+                <span class="form-error" id="error-subject" aria-live="polite"></span>
+              </div>
+
+              <!-- Campo: Mensagem -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Sua Mensagem *</label>
+                <textarea 
+                  id="contact-message" 
+                  name="message" 
+                  class="form-textarea" 
+                  rows="4" 
+                  placeholder="Escreva sua mensagem aqui..."
+                  required
+                ></textarea>
+                <span class="form-error" id="error-message" aria-live="polite"></span>
+              </div>
+
+              <!-- Mensagem de Feedback (Sucesso/Erro Global) -->
+              <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+
+              <!-- Botão de Envio -->
+              <button type="submit" id="btn-submit" class="btn btn-primary btn-submit">
+                <span>Enviar Mensagem</span>
+                <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       RODAPÉ DO SITE
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <span class="footer-logo">&lt;Lorena.dev /&gt;</span>
+        <p class="footer-copy">© 2026 Lorena Santana. Desenvolvido com HTML5, CSS3 e JavaScript puro.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/loresantana" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="Acessar perfil de Lorena Santana no GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       BOTÃO FLUTUANTE PARA VOLTAR AO TOPO (BACK TO TOP)
+       ===================================================================== -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Voltar ao topo da página" title="Voltar ao topo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
